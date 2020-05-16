@@ -1,0 +1,49 @@
+Git Commands
+==============================
+
+To checkout to existing branch
+------------------------------
+git checkout <branch-name>
+
+To Commit
+---------
+git commit -m 'Commit-Message'
+
+
+To push to remote
+-----------------
+git push origin <branch-name>
+
+
+To create a new branch
+----------------------
+git checkout -b <branch-name>
+git flow hotfix start <branch-name>
+
+To merge
+--------
+git checkout <target-branch-name>
+git merge <source-branch-name>
+
+git flow hotfix finish <branch-name>
+
+Listing of Tags
+---------------
+git tag
+
+Taging a release
+----------------
+git tag -a <version> -m <message>
+git push --tags
+
+
+Checkout on a Tag
+-----------------
+git checkout <tag-name>
+
+
+Git Rebase commits
+------------------
+git rebase -i [commit-hash]
+
+git rebase -i master
